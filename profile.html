@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="dashboard.css">
+    
+</head>
+<body>
+    <main>
+
+        <div class="row">
+
+            <div class="col-sm-5">
+                <div class="content content1">
+                    <div class="img">
+                        <div class="profilePic">
+                            <div class="profileCont">
+                                <label class="-label" for="file">
+                                    <span><i class="fa-solid fa-plus"></i></span>
+                                    <p>Change profile Picture</p>
+                                </label>
+                                <input id="file" type="file" onchange="loadFile(event)"/>
+                            </div>
+                        </div>
+                        <img src="./images/IMG_0037.JPG" alt="" class="img2 img-thumbnail img-fluid" id="output2">
+                        <img src="./images/IMG_0037.JPG" alt="" class="img1" id="output">
+                    </div>
+                    <div class="contents">
+                        <h6 id="usernNameCont">Muhammadjamiu Abdulganiu</h6>
+                        <span>Some quick example text to build on the card title and make up the bulk of the card's content.</span>
+                    </div>
+                    <div class="btns d-flex">
+                        <a href="" class="btn"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="btn"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" class="btn"><i class="fa-brands fa-github"></i></a>
+                        <a href="" class="btn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="">
+                        <div class="skills d-flex">
+                            <span class="skill"><img src="./images/html5.svg" alt=""></span>
+                            <div class="d-block">
+                                <div class="d-flex cent" id="cent">
+                                    <span class="html">HTML</span>
+                                    <span class="per">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills d-flex">
+                            <span class="skill"><img src="./images/bootstrap-4.svg" alt=""></span>
+                            <div class="d-block">
+                                <div class="d-flex cent" id="cent">
+                                    <span class="css">Bootstrap5</span>
+                                    <span class="per">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills d-flex reveal">
+                            <span class="skill"><img src="./images/javascript-1.svg" alt=""></span>
+                            <div class="d-block">
+                                <div class="d-flex cent" id="cent">
+                                    <span class="js">JavaScript</span>
+                                    <span class="per">80%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills d-flex">
+                            <span class="skill"><img src="./images/react.svg" alt=""></span>
+                            <div class="d-block">
+                                <div class="d-flex cent" id="cent">
+                                    <span class="react">React</span>
+                                    <span class="per">69%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-7">
+                <div class="content2 content">
+
+                    <div class="header d-flex">
+                        <div class="absolute" id="absolute"></div>
+                        <div class="headerCont" id="headerCont2">
+                            <span class="d-block"><i class="fa-solid fa-message"></i></span>
+                            <span>Message</span>
+                        </div>
+                        <div class="headerCont" id="headerCont3">
+                            <span class="d-block"><i class="fa-solid fa-pen-to-square"></i></span>
+                            <span>Edit Info</span>
+                        </div>
+                    </div>
+
+                    <div class="profileCont" id="profileCont">
+                        <div id="accordion" class="accordion">
+                            
+
+                            <div class="">
+                              <div class="card-header d-flex">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                  Dashboard
+                                </a>
+                                <p class="btn badge bg-info" data-bs-toggle="collapse" href="#collapseOne">Read</p>
+                              </div>
+                              <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    Sales dashboard have been created and order , Please Feel Free to Contact Us anytime , We will get back to you.
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="">
+                                <div class="card-header d-flex">
+                                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse5">
+                                   Security
+                                  </a>
+                                  <p class="btn badge bg-info" data-bs-toggle="collapse" href="#collapse5">Read</p>
+                                </div>
+                                <div id="collapse5" class="collapse" data-bs-parent="#accordion">
+                                  <div class="card-body">
+                                    There has been a request on your account , Someone is trying to Login With Your Email , Please Change your Password
+                                  </div>
+                                </div>
+                            </div>
+                          
+                            <div class="">
+                              <div class="card-header d-flex">
+                                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                                  Doris Warren
+                                </a>
+                                <p class="btn badge bg-info" data-bs-toggle="collapse" href="#collapseTwo">Read</p>
+                              </div>
+                              <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    You have done a great job , Please Read our Privacy and Policy.
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="">
+                              <div class="card-header d-flex">
+                                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                                    Mike Jordan
+                                </a>
+                                <p class="btn badge bg-info" data-bs-toggle="collapse" href="#collapseThree">Read</p>
+                              </div>
+                              <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    On the other hand, we denounce.
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="">
+                                <div class="card-header d-flex">
+                                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse4">
+                                   Profile Update
+                                  </a>
+                                  <p class="btn badge bg-info" data-bs-toggle="collapse" href="#collapse4">Read</p>
+                                </div>
+                                <div id="collapse4" class="collapse" data-bs-parent="#accordion">
+                                  <div class="card-body">
+                                      Complete your Profile to gain more access and Features.
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="card-header d-flex">
+                                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse7">
+                                   Ethel Kelly
+                                  </a>
+                                  <p class="btn badge bg-info" data-bs-toggle="collapse" href="#collapse7">Read</p>
+                                </div>
+                                <div id="collapse7" class="collapse" data-bs-parent="#accordion">
+                                  <div class="card-body">
+                                    Please review the tickets and get back to us as soon as possible.
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="card-header d-flex">
+                                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse6">
+                                   Herman
+                                  </a>
+                                  <p class="btn badge bg-info" data-bs-toggle="collapse" href="#collapse6">Read</p>
+                                </div>
+                                <div id="collapse6" class="collapse" data-bs-parent="#accordion">
+                                  <div class="card-body">
+                                    Thanks a lot. It was easy to fix with your assistance.
+                                  </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="text-center">
+            <div>
+              <span class="text-center">
+                Copyright © 2022 Muhammadjamiu
+              </span>
+            </div>
+          </footer>
+
+    </main>
+    <script src="profile.js"></script>
+</body>
+</html>
