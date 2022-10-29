@@ -76,10 +76,10 @@ nav .iconSet i:hover{
     transition: .2s;
 }
 
-#nav.valid{
+/* #nav.valid{
     transition: .2s;
     background: url(./images/1\ \(1\).png);
-}
+} */
 
 /* toggle background image */
 #body.bg1{
@@ -247,7 +247,7 @@ nav .iconSet i:hover{
     position: fixed;
     right: 0;
     height: 100%;
-    background-color: black;
+    background: url(./images/1\ \(1\).png);
     z-index: 1200;
     width: 55%;
     padding: .8em;
@@ -622,7 +622,7 @@ footer{
     
     nav{
         color: white;
-        background-color: rgba(255, 255, 255, 0.073);
+        background: rgba(255, 255, 255, 0.073);
         box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.068);
         width: 100%;
     }
@@ -759,7 +759,7 @@ footer{
     /* side bar content */
     .sidebar{
         display: inline;
-        background-color: rgba(255, 255, 255, 0.073);
+        background: rgba(255, 255, 255, 0.073);
         color: white;
         position: fixed;
         height: 100%;
@@ -854,7 +854,7 @@ footer{
         position: fixed;
         right: 0;
         height: 100%;
-        background-color: black;
+        background: url(./images/1\ \(1\).png);
         z-index: 1200;
         width: 20%;
         padding: .8em;

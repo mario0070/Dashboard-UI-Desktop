@@ -12,7 +12,7 @@ body{
 nav{
     padding: 1em;
     color: white;
-    background-color: black;
+    background: url(./images/1\ \(1\).png);
     box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.068);
     width: 100%;
     max-width: 1440px;
@@ -77,10 +77,10 @@ nav .iconSet i:hover{
     transition: .2s;
 }
 
-#nav.valid{
+/* #nav.valid{
     transition: .2s;
     background: url(./images/1\ \(1\).png);
-}
+} */
 
 .cookies {
     position: fixed;
@@ -160,8 +160,7 @@ nav .iconSet i:hover{
 
 /* side bar content */
 .sidebar{
-    /* display: none; */
-    background-color:black;
+    background: url(./images/1\ \(1\).png);
     color: white;
     position: fixed;
     height: 7%;
@@ -278,7 +277,7 @@ nav .iconSet i:hover{
     position: fixed;
     right: 0;
     height: 100%;
-    background-color: black;
+    background: url(./images/1\ \(1\).png);
     z-index: 1200;
     width: 55%;
     padding: .8em;
@@ -470,7 +469,7 @@ nav .iconSet i:hover{
     nav{
         padding: 1em;
         color: white;
-        background-color: rgba(255, 255, 255, 0.073);
+        background: rgba(255, 255, 255, 0.073);
         box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.068);
         width: 100%;
         max-width: 1440px;
@@ -623,7 +622,7 @@ nav .iconSet i:hover{
     /* side bar content */
     .sidebar{
         display: inline;
-        background-color: rgba(255, 255, 255, 0.073);
+        background: rgba(255, 255, 255, 0.073);
         color: white;
         position: fixed;
         height: 100%;
@@ -735,7 +734,7 @@ nav .iconSet i:hover{
         position: fixed;
         right: 0;
         height: 100%;
-        background-color: black;
+        background: url(./images/1\ \(1\).png);
         z-index: 1200;
         width: 20%;
         padding: .8em;
