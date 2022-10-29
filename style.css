@@ -79,7 +79,7 @@ nav .iconSet i:hover{
 
 #nav.valid{
     transition: .2s;
-    background: black;
+    background: url(./images/1\ \(1\).png);
 }
 
 .cookies {
@@ -301,7 +301,8 @@ nav .iconSet i:hover{
 
 #wheelBtn.valid{
     transition: .5s  ; 
-    transform: translateX(-255px) translateY(240px);
+    margin-right: 55%;
+    /* transform: translateX(-255px) translateY(240px); */
 }
 
 .color-wheel .d-flex{
@@ -755,10 +756,12 @@ nav .iconSet i:hover{
         transition: .4s ;
     }
     
-    #wheelBtn.valid{
-        transition: .5s  ; 
-        transform: translateX(-255px) translateY(240px);
-    }
+  
+#wheelBtn.valid{
+    transition: .5s  ; 
+    margin-right: 20%;
+    /* transform: translateX(-255px) translateY(240px); */
+}
     
     .color-wheel .d-flex{
         justify-content: space-between;
