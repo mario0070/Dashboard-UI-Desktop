@@ -302,16 +302,23 @@ profile.addEventListener("click",()=>{
 })
 
 // load Pages
-$("#form").click(()=>{
+
+$(document).ready(()=>{
+  $("#form").click(()=>{
     $(".main-content").load("form.html")
+  })
 })
 
-$("#board").click(()=>{
+$(document).ready(()=>{
+  $("#board").click(()=>{
     $(".main-content").load("dashboard.html")
+  })
 })
 
-$("#profile").click(()=>{
-  $(".main-content").load("profile.html")
+$(document).ready(()=>{
+  $("#profile").click(()=>{
+    $(".main-content").load("profile.html")
+  })
 })
 
 

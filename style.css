@@ -243,6 +243,7 @@ nav .iconSet i:hover{
 .siderbar-content  i{
     margin-right: 0em;
     display: block;
+    margin-top: .3em;
 }
 
 .sidebar a{
@@ -393,6 +394,43 @@ nav .iconSet i:hover{
     background-size: cover;
 }
 
+.siderbar-content  i{
+    margin-right: 0em;
+    display: block;
+    margin-top: .5em;
+}
+
+
+.abs{
+    display: inline;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    left: 0;
+    height: 7%;
+    width: 20%;
+    transition: .5s;
+    margin-left: 8%;
+}
+
+
+#board.valid,
+#icon.valid,
+#table.valid,
+#form.valid,
+#login.valid,
+#register.valid,
+#profile.valid,
+#calender.valid
+{
+    border-right: 0px solid white;
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
 
 
 
@@ -499,6 +537,10 @@ nav .iconSet i:hover{
     #nav.valid{
         transition: .2s;
         background: black;
+    }
+
+    .abs{
+        display: none;
     }
     
     .cookies {

@@ -53,11 +53,11 @@ headerCont3.addEventListener("click",()=>{
 
 
 $("#headerCont3").click(()=>{
-    $("#profileCont").load("/profile/edit.html")
+    $("#profileCont").load("edit.html")
 })
   
 
 $("#headerCont2").click(()=>{
-    $("#profileCont").load("/profile/message.html")
+    $("#profileCont").load("message.html")
 })
   

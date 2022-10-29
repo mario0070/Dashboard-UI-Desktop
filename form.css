@@ -1,20 +1,28 @@
+main{
+    margin-bottom: 3em;
+}
 
 .content1{
     background-color: rgba(255, 255, 255, 0.073);
     border-radius: .5em;
     height: 99%;
-    width: 90%;
+    width: 115%;
     padding: 2em;
     animation: content1 .4s ease-in-out;
+    margin-left: -1.5em;
+    margin-bottom: 2em;
 }
 
 .content2{
     background-color: rgba(255, 255, 255, 0.073);
     border-radius: .5em;
     height: 99%;
-    width: 90%;
+    width: 115%;
     padding: 1em;
     animation: content2 .6s ease-in-out;
+    margin-left: -1.5em;
+    /* transform: translateY(-100px); */
+    margin-top: 3em;
 }
 
 @keyframes content1 {
@@ -92,3 +100,30 @@
 
 
 
+@media screen and (min-width:600px) {
+
+    main{
+        margin-bottom: 1em;
+    }
+
+    .content1{
+        background-color: rgba(255, 255, 255, 0.073);
+        border-radius: .5em;
+        height: 99%;
+        width: 90%;
+        padding: 2em;
+        animation: content1 .4s ease-in-out;
+        margin-left: 0em;
+        margin-bottom: 0em;
+    }
+
+    .content2{
+        background-color: rgba(255, 255, 255, 0.073);
+        border-radius: .5em;
+        height: 99%;
+        width: 90%;
+        padding: 1em;
+        animation: content2 .6s ease-in-out;
+        margin-top: 0em;
+    }
+}

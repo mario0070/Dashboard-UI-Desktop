@@ -529,6 +529,24 @@ nav .iconSet i:hover{
     background-color: rgba(255, 255, 255, 0.306);
 }
 
+#board.valid,
+#icon.valid,
+#table.valid,
+#form.valid,
+#login.valid,
+#register.valid,
+#profile.valid,
+#calender.valid
+{
+    border-right: 0px solid white;
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
 
 
 /* section 3 */
@@ -1162,6 +1180,8 @@ footer{
         font-weight: 900;
         border-top: 1px solid rgba(255, 255, 255, 0.632);
     }
+
+    
     
 
 }
