@@ -31,7 +31,7 @@ accept.addEventListener("click",()=>{
 window.addEventListener("load",()=>{
   setTimeout(()=>{
     cookies.classList.add("valid")
-  },5000)
+  },10000)
 })
 
 
@@ -50,10 +50,32 @@ function reveals(){
   
         if(revealt < windowh - revealp){
             nav.classList.add("valid")
-        
+
         }
         else{
             nav.classList.remove("valid")
+        }
+    }
+  }
+
+
+  
+// Hide bottom bar
+window.addEventListener("scroll",revealSidebar)
+  function revealSidebar(){
+    var sidebar = document.getElementById("sidebar")
+    var reveals=document.querySelectorAll(".revealBar")
+    for (var i = 0 ; i < reveals.length ;i++){
+        var windowh=window.innerHeight;
+        var revealt=reveals[i].getBoundingClientRect().top;
+        var revealp=10;
+  
+        if(revealt < windowh - revealp){
+            sidebar.classList.add("valid")
+        
+        }
+        else{
+            sidebar.classList.remove("valid")
         }
     }
   }
@@ -212,6 +234,7 @@ var table=document.getElementById("table")
 var profile=document.getElementById("profile")
 var login=document.getElementById("login")
 var register=document.getElementById("register")
+var abs=document.getElementById("abs")
 board.addEventListener("click",()=>{
     board.classList.add("valid")
     document.getElementById("mainCont").classList.add("valid")
@@ -222,6 +245,11 @@ board.addEventListener("click",()=>{
     icon.classList.remove("valid")
     table.classList.remove("valid")
     form.classList.remove("valid")
+    abs.classList.add("valid")
+    abs.classList.remove("valid1")
+    abs.classList.remove("valid2")
+    abs.classList.remove("valid3")
+
 })
 icon.addEventListener("click",()=>{
   document.getElementById("mainCont").classList.remove("valid")
@@ -244,6 +272,10 @@ form.addEventListener("click",()=>{
     icon.classList.remove("valid")
     table.classList.remove("valid")
     board.classList.remove("valid")
+    abs.classList.add("valid2")
+    abs.classList.remove("valid1")
+    abs.classList.remove("valid")
+    abs.classList.remove("valid3")
 })
 table.addEventListener("click",()=>{
   document.getElementById("mainCont").classList.remove("valid")
@@ -266,6 +298,10 @@ login.addEventListener("click",()=>{
     icon.classList.remove("valid")
     table.classList.remove("valid")
     form.classList.remove("valid")
+    abs.classList.add("valid3")
+    abs.classList.remove("valid1")
+    abs.classList.remove("valid2")
+    abs.classList.remove("valid")
 })
 register.addEventListener("click",()=>{
   document.getElementById("mainCont").classList.remove("valid")
@@ -299,6 +335,10 @@ profile.addEventListener("click",()=>{
     board.classList.remove("valid")
     table.classList.remove("valid")
     form.classList.remove("valid")
+    abs.classList.add("valid1")
+    abs.classList.remove("valid")
+    abs.classList.remove("valid2")
+    abs.classList.remove("valid3")
 })
 
 // load Pages

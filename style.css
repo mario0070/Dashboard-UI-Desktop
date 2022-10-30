@@ -85,7 +85,7 @@ nav .iconSet i:hover{
 .cookies {
     position: fixed;
     width: 100%;
-    background: url(./images/2\ \(1\).png);
+    background: url(./images/1\ \(1\).png);
     bottom: 0;
     z-index: 500;
     display: flex;
@@ -163,12 +163,18 @@ nav .iconSet i:hover{
     background: url(./images/1\ \(1\).png);
     color: white;
     position: fixed;
-    height: 7%;
+    height: 10%;
     box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.057);
     width: 100%;
-    overflow: scroll;
     bottom: 0;
     z-index: 100;
+    transform: translateY(200px);
+    transition: 1s;
+}
+
+.sidebar.valid{
+    transition: .5s;
+    transform: translateY(0px);
 }
 
 ::-webkit-scrollbar{
@@ -413,6 +419,27 @@ nav .iconSet i:hover{
     margin-left: 8%;
 }
 
+#abs.valid{
+    margin-left: 8%;
+    transition: .5s;
+}
+
+#abs.valid1{
+    margin-left: 34%;
+    transition: .5s;
+}
+
+#abs.valid2{
+    margin-left: 55%;
+    transition: .5s;
+}
+
+
+#abs.valid3{
+    margin-left: 75%;
+    transition: .5s;
+}
+
 
 #board.valid,
 #icon.valid,
@@ -546,7 +573,7 @@ nav .iconSet i:hover{
     .cookies {
         position: fixed;
         width: 30%;
-        background: url(./images/2\ \(1\).png);
+        background: url(./images/1\ \(1\).png);
         bottom: 0;
         z-index: 500;
         display: flex;
@@ -630,7 +657,12 @@ nav .iconSet i:hover{
         width: 20%;
         overflow: scroll;
         top: 100;
+        transform: translateY(0px);
     }
+/* 
+    .sidebar.valid{
+        display: none;
+    } */
     
     ::-webkit-scrollbar{
         display: none;
