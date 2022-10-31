@@ -550,8 +550,6 @@ nav .iconSet i:hover{
 }
 
 
-
-
 /* section 1 */
 
 .section1{
@@ -814,11 +812,6 @@ footer{
     font-weight: 900;
     border-top: 1px solid rgba(255, 255, 255, 0.632);
 }
-
-
-
-
-
 
 
 
@@ -1243,13 +1236,10 @@ footer{
         50%{transform: rotate(180deg);}
         to{transform: rotate(360deg);}
     }
-
-
-
-        
-    /* section 1 */
     
-    .section1{
+     /* section 1 */
+    
+     .section1{
         width: 100%;
         margin-left: 0em;
         border-radius: .3em;
@@ -1485,8 +1475,4 @@ footer{
         font-weight: 900;
         border-top: 1px solid rgba(255, 255, 255, 0.632);
     }
-
-    
-
-
 }
