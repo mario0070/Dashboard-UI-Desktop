@@ -562,8 +562,3 @@ $(document).ready(()=>{
     $(".main-content").load("profile.html")
   })
 })
-
-
-window.addEventListener("load",()=>{
-    $(".main-content").load("dashboard.html")
-})
